@@ -14,12 +14,12 @@ const showMessage = (correctNumberChildren, numberOfChildren) => {
 
 const over = (e) => {
   window.timeout = window.setTimeout(() => {
-    e.target.remove()
+    e.target.remove();
   }, 2000)
 }
 
 const left = () => {
-  if (window.timeout) window.clearTimeout(window.timeout)
+  if (window.timeout) window.clearTimeout(window.timeout);
 }
 
 const drawContainer = (containerSize, childSize, numberOfChildren) => {
@@ -42,7 +42,7 @@ const drawContainer = (containerSize, childSize, numberOfChildren) => {
     container.appendChild(square);
   }
 
-  if (numberOfChildren > correctNumberChildren) showMessage(correctNumberChildren, numberOfChildren)
+  if (numberOfChildren > correctNumberChildren) showMessage(correctNumberChildren, numberOfChildren);
 };
 
-drawContainer(310, 200, 4);
+drawContainer(310, 10, 50);
